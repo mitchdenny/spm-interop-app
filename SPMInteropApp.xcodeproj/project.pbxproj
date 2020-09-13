@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		51D10416250E342B000F7E82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51D10414250E342B000F7E82 /* LaunchScreen.storyboard */; };
 		51D10421250E342B000F7E82 /* SPMInteropAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D10420250E342B000F7E82 /* SPMInteropAppTests.swift */; };
 		51D1042C250E342B000F7E82 /* SPMInteropAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1042B250E342B000F7E82 /* SPMInteropAppUITests.swift */; };
+		51D1043B250E346B000F7E82 /* SPMInteropLib2 in Frameworks */ = {isa = PBXBuildFile; productRef = 51D1043A250E346B000F7E82 /* SPMInteropLib2 */; };
+		51D1043E250E348A000F7E82 /* SPMInteropLib1 in Frameworks */ = {isa = PBXBuildFile; productRef = 51D1043D250E348A000F7E82 /* SPMInteropLib1 */; };
+		51D1044E250E3645000F7E82 /* SPMInteropLib3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1044D250E3645000F7E82 /* SPMInteropLib3.framework */; };
+		51D1044F250E3645000F7E82 /* SPMInteropLib3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51D1044D250E3645000F7E82 /* SPMInteropLib3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		51D10443250E349C000F7E82 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51D1044F250E3645000F7E82 /* SPMInteropLib3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		51D10403250E3427000F7E82 /* SPMInteropApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMInteropApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D10406250E3427000F7E82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +69,7 @@
 		51D10427250E342B000F7E82 /* SPMInteropAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPMInteropAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D1042B250E342B000F7E82 /* SPMInteropAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPMInteropAppUITests.swift; sourceTree = "<group>"; };
 		51D1042D250E342B000F7E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D1044D250E3645000F7E82 /* SPMInteropLib3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SPMInteropLib3.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D1044E250E3645000F7E82 /* SPMInteropLib3.framework in Frameworks */,
+				51D1043B250E346B000F7E82 /* SPMInteropLib2 in Frameworks */,
+				51D1043E250E348A000F7E82 /* SPMInteropLib1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,7 @@
 				51D1041F250E342B000F7E82 /* SPMInteropAppTests */,
 				51D1042A250E342B000F7E82 /* SPMInteropAppUITests */,
 				51D10404250E3427000F7E82 /* Products */,
+				51D1043F250E349C000F7E82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +154,14 @@
 			path = SPMInteropAppUITests;
 			sourceTree = "<group>";
 		};
+		51D1043F250E349C000F7E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51D1044D250E3645000F7E82 /* SPMInteropLib3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,12 +172,17 @@
 				51D103FF250E3427000F7E82 /* Sources */,
 				51D10400250E3427000F7E82 /* Frameworks */,
 				51D10401250E3427000F7E82 /* Resources */,
+				51D10443250E349C000F7E82 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SPMInteropApp;
+			packageProductDependencies = (
+				51D1043A250E346B000F7E82 /* SPMInteropLib2 */,
+				51D1043D250E348A000F7E82 /* SPMInteropLib1 */,
+			);
 			productName = SPMInteropApp;
 			productReference = 51D10403250E3427000F7E82 /* SPMInteropApp.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +255,10 @@
 				Base,
 			);
 			mainGroup = 51D103FA250E3427000F7E82;
+			packageReferences = (
+				51D10439250E346B000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib2" */,
+				51D1043C250E348A000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib1" */,
+			);
 			productRefGroup = 51D10404250E3427000F7E82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,6 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GA4ERZD2JW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SPMInteropApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +502,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GA4ERZD2JW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = SPMInteropApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,6 +642,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51D10439250E346B000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/mitchdenny/spm-interop-lib2";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		51D1043C250E348A000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib1" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mitchdenny/spm-interop-lib1";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51D1043A250E346B000F7E82 /* SPMInteropLib2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D10439250E346B000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib2" */;
+			productName = SPMInteropLib2;
+		};
+		51D1043D250E348A000F7E82 /* SPMInteropLib1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51D1043C250E348A000F7E82 /* XCRemoteSwiftPackageReference "spm-interop-lib1" */;
+			productName = SPMInteropLib1;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		51D1040F250E3427000F7E82 /* SPMInteropApp.xcdatamodeld */ = {

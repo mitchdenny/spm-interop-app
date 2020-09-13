@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SPMInteropLib1",
+        "repositoryURL": "https://github.com/mitchdenny/spm-interop-lib1",
+        "state": {
+          "branch": "master",
+          "revision": "af0b70b6cc689127307f15bb7555f7218522fc3f",
+          "version": null
+        }
+      },
+      {
+        "package": "SPMInteropLib2",
+        "repositoryURL": "http://github.com/mitchdenny/spm-interop-lib2",
+        "state": {
+          "branch": "master",
+          "revision": "506361e553bd672858be82419b427e29db6ad5ad",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

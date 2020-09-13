@@ -1,0 +1,6 @@
+framework module SPMInteropLib3 {
+  umbrella header "SPMInteropLib3.h"
+
+  export *
+  module * { export * }
+}

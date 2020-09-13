@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import SPMInteropLib3
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let g = Greeter()
+        
     }
 
 
